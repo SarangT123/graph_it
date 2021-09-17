@@ -3,6 +3,7 @@ import discord
 
 
 
+
 class BasicCommands(commands.Cog):
     """The description for BasicCommands goes here."""
 
@@ -17,7 +18,6 @@ class BasicCommands(commands.Cog):
             embed.set_author(name="Graph it", url="https://discord.com/api/oauth2/authorize?client_id=887213789081124914&permissions=412317190208&scope=bot")
             embed.add_field(name="Bar graph", value="You can use `;bar <title> <X axis label> <Y axis label> <data>` to make a bar chart  For help on how to write data please do `;help data`", inline=True)
             embed.set_footer(text="Thanks for using us")
-            await ctx.send(embed=embed)
             await ctx.send(embed=embed)
         elif helpwith == "pie":
 
@@ -60,12 +60,19 @@ class BasicCommands(commands.Cog):
             embed.add_field(name="Example", value=" ;hist title titlex titley `10,13,27,32` `10,20,30`", inline=True)
             embed.set_footer(text="Thanks for using us")
             await ctx.send(embed=embed)
+        elif helpwith == "quick":
+            embed=discord.Embed(title="Help is here", url="https://discord.com/api/oauth2/authorize?client_id=887213789081124914&permissions=412317190208&scope=bot", description=" ", color=0xffd642)
+            embed.set_author(name="Graph it", url="https://discord.com/api/oauth2/authorize?client_id=887213789081124914&permissions=412317190208&scope=bot")
+            embed.add_field(name="Quick commands", value="Quick commands are used for quickly drawing some graphs. You can put 'Q' infront of any graph command to Use this mode. Eg: `;Qlinear 1sec,100,2sec,200 `", inline=False)
+            embed.set_footer(text="Thanks for using us")
+            await ctx.send(embed=embed)
         else:
             embed=discord.Embed(title="Help is here", url="https://discord.com/api/oauth2/authorize?client_id=887213789081124914&permissions=412317190208&scope=bot", description="Choose which topic you need help with", color=0xffd642)
             embed.set_author(name="Graph it", url="https://discord.com/api/oauth2/authorize?client_id=887213789081124914&permissions=412317190208&scope=bot")
             embed.add_field(name="help", value="`Select an option from below which you need help with`", inline=False)
             embed.add_field(name=";help graphname", value=";help `<graphname>`  to get help with graphs", inline=False)
             embed.add_field(name=";helpmulti graphname", value=";helpmulti `<graphname>`  to get help with multigraphs", inline=False)
+            embed.add_field(name=";help quick", value=";help quick", inline=False)
             embed.set_footer(text="Thanks for using us")
             await ctx.send(embed=embed)
 
