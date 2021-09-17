@@ -9,7 +9,7 @@ class graph():
     def ___init__(self):
         pass
 
-    def barGraph(self, datax, datay, title, xl, yl):
+    def barGraph(self, datax, datay, title, xl, yl, ng):
         x = datax
         y = datay
         fig = plt.figure(figsize=(10, 5))
@@ -17,8 +17,10 @@ class graph():
         plt.rcParams['text.color'] = 'black'
         plt.rcParams['axes.labelcolor'] = 'black'
         fig.patch.set_facecolor('#fcb86a')
-        plt.bar(x, y, color='#6a9bfc',
-                width=0.4,)
+        for i in range(ng):
+            print(x[i], y[i])
+            plt.bar(x[i], y[i],
+                    width=0.4,)
         plt.xlabel(xl)
         plt.ylabel(yl)
         plt.title(title)
@@ -99,18 +101,21 @@ class graph_multi(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command("bar")
-    async def bar(self, ctx, title: str, xl: str, yl: str, data: str):
+    @commands.command("bar_multi")
+    async def bar_multi(self, ctx, title: str, xl: str, yl: str, *, data: str):
         dbg = graph()
-        data = data.split("#")
-        ng = len(data)
+        print(data)
+        data = data.split(" ")
         for i in range(len(data)):
             data[i] = data[i].split(",")
+        ng = len(data)
+        print(data, ng)
         keys = []
         values = []
         for i in range(len(data)):
             keys.append([])
             values.append([])
+            print(i)
 
         for i in range(len(data)):
             for n in range(len(data[i])):
@@ -122,7 +127,7 @@ class graph_multi(commands.Cog):
             await ctx.send("The amount of keys and values are not the same")
         else:
             print(keys, values)
-            dbg.barGraph(keys, values, title, xl, yl)
+            dbg.barGraph(keys, values, title, xl, yl, ng)
             await ctx.send(file=discord.File('mygraph.png'))
 
 
