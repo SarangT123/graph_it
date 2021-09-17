@@ -36,7 +36,7 @@ class graph():
         fig.patch.set_facecolor('#fcb86a')
         for i in range(ng):
             print(x[i], y[i])
-            plt.bar(x[i], y[i])
+            plt.plot(x[i], y[i])
         plt.xlabel(xl)
         plt.ylabel(yl)
         plt.title(title)
