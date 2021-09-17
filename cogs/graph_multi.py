@@ -162,7 +162,7 @@ class graph_multi(commands.Cog):
             await ctx.send("The amount of keys and values are not the same")
         else:
             print(keys, values)
-            dbg.barGraph(keys, values, title, xl, yl, ng)
+            dbg.linearGraph(keys, values, title, xl, yl, ng)
             await ctx.send(file=discord.File('mygraph.png'))
 
     @commands.command("scatter_multi")
@@ -191,7 +191,7 @@ class graph_multi(commands.Cog):
             await ctx.send("The amount of keys and values are not the same")
         else:
             print(keys, values)
-            dbg.barGraph(keys, values, title, xl, yl, ng)
+            dbg.scatterGraph(keys, values, title, xl, yl, ng)
             await ctx.send(file=discord.File('mygraph.png'))
 
     @commands.command("area_multi")
@@ -220,7 +220,7 @@ class graph_multi(commands.Cog):
             await ctx.send("The amount of keys and values are not the same")
         else:
             print(keys, values)
-            dbg.barGraph(keys, values, title, xl, yl, ng)
+            dbg.areaGraph(keys, values, title, xl, yl, ng)
             await ctx.send(file=discord.File('mygraph.png'))
 
     @commands.command("pie_multi")
@@ -249,7 +249,7 @@ class graph_multi(commands.Cog):
             await ctx.send("The amount of keys and values are not the same")
         else:
             print(keys, values)
-            dbg.barGraph(keys, values, title, xl, yl, ng)
+            dbg.pieGraph(keys, values, title, xl, yl, ng)
             await ctx.send(file=discord.File('mygraph.png'))
 
 
