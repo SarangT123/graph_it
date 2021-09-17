@@ -172,7 +172,7 @@ class graph_single(commands.Cog):
             await ctx.send(file=discord.File('mygraph.png'))
 
     @commands.command("scatter")
-    async def pie(self, ctx, title: str, xl: str, yl: str, *, data: str):
+    async def scatter(self, ctx, title: str, xl: str, yl: str, *, data: str):
         dbg = graph()
         data = data.split(",")
         keys = []
