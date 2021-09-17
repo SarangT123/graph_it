@@ -32,7 +32,7 @@ class BasicCommands(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(aliases=["help,holp,h"])
+    @commands.command("help")
     async def help(self, ctx, helpwith: str):
         if helpwith == "bar":
             await ctx.send("**How to use bar chart** \n You can use ```py \n !bar <title> <X axis label> <Y axis label> <data>``` to make a bar chart \n For help on how to write data please do `!help data`")
