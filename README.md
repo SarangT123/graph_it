@@ -1,6 +1,5 @@
 # graph_it
 Graph it is a discord bot used to draw graphs
-[Website](https://codersarang.me/graph_it/)
 
 
 ## Invite 
@@ -10,7 +9,7 @@ or use this [link](https://discord.com/oauth2/authorize?client_id=88721378908112
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
+welcome
 Please make sure to update tests as appropriate.
 
 ## License
