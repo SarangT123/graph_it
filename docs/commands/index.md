@@ -4,12 +4,53 @@
 
 
 The commands can be catogorized to two parts
-
+- Quick single graph commands
 - Single graph commands
 - Multi graph commands
 
+
+But before we get into the commands i would reccomend you learn how to write [data](https://codersarang.me/graph_it/commands/#data)
+
 --------------------------------------------------
 
+### Quick single graph commands
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>ARGS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Qbar</td>
+<td>&lt;data&gt;</td>
+</tr>
+<tr>
+<td>Qlinear</td>
+<td>&lt;data&gt;</td>
+</tr>
+<tr>
+<td>Qpie</td>
+<td>&lt;data&gt;</td>
+</tr>
+<tr>
+<td>Qarea</td>
+<td>&lt;data&gt;</td>
+</tr>
+<tr>
+<td>Qscatter</td>
+<td>&lt;data&gt;</td>
+</tr>
+<tr>
+<td>Qhist</td>
+<td>&lt;data&gt;</td>
+</tr>
+</tbody>
+</table>
+
+----------------------------
 ### Single graph commands 
 ----------------------------
 <table>
@@ -76,7 +117,7 @@ What does they refer to?
 </table>
 
 
-
+---------------------------
 ### Multi graph commands
 ---------------------------
 <table>
@@ -100,7 +141,7 @@ What does they refer to?
 <td>&lt;title&gt; &lt;xl&gt; &lt;yl&gt; &lt;data&gt;</td>
 </tr>
 <tr>
-<td>are_multi</td>
+<td>area_multi</td>
 <td>&lt;title&gt; &lt;xl&gt; &lt;yl&gt; &lt;data&gt;</td>
 </tr>
 <tr>
@@ -139,7 +180,7 @@ What does they refer to?
 </tbody>
 </table>
 
-
+<div id='data'>
 ---------------------------
 ### How to write the data?
 ---------------------------
@@ -176,3 +217,17 @@ Here the data is
 And the first set would be `NYC-day1,10,NYC-day2,20`
 
 The second set is spearated from the first set through a space so the second set is `WDC-day1,30,WDC-day2,20`
+
+This would return us an image something like this
+
+<img src="https://media.discordapp.net/attachments/873944956358762606/938306850556874752/mygraph.png">
+
+and if you are looking for quickgraph command 
+here is an example
+
+Eg:`;Qbar NYC-day1,10,NYC-day2,20`
+
+This command would return a graph like this
+
+<img src="https://media.discordapp.net/attachments/873944956358762606/938310848236101673/mygraph.png">
+</div>
