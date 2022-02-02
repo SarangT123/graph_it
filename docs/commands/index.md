@@ -9,7 +9,9 @@ The commands can be catogorized to two parts
 - Multi graph commands
 
 
-But before we get into the commands i would reccomend you learn how to write [data](https://codersarang.me/graph_it/commands/#data)
+But before we get into the commands i would reccomend you learn how to write data
+Scroll down to the last session of the page to find it out
+
 
 --------------------------------------------------
 
@@ -180,7 +182,6 @@ What does they refer to?
 </tbody>
 </table>
 
-<div id='data'>
 ---------------------------
 ### How to write the data?
 ---------------------------
@@ -230,4 +231,3 @@ Eg:`;Qbar NYC-day1,10,NYC-day2,20`
 This command would return a graph like this
 
 <img src="https://media.discordapp.net/attachments/873944956358762606/938310848236101673/mygraph.png">
-</div>
