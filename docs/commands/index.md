@@ -4,22 +4,69 @@
 
 ### Single graph commands 
 ----------------------------
-Command  | ARGS
--------- | -------
-bar      | &lt;title&gt; &lt;xl&gt; &lt;yl&gt; &lt;data&gt;
-pie      | &lt;title&gt; &lt;xl&gt; &lt;yl&gt; &lt;data&gt;
-linear   | &lt;title&gt; &lt;xl&gt; &lt;yl&gt; &lt;data&gt;
-area     | &lt;title&gt; &lt;xl&gt; &lt;yl&gt; &lt;data&gt;
-scatter  | &lt;title&gt; &lt;xl&gt; &lt;yl&gt; &lt;data&gt;
-hist     | &lt;title&gt; &lt;xl&gt; &lt;yl&gt; &lt;data&gt;
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>ARGS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bar</td>
+<td>&lt;title&gt; &lt;xl&gt; &lt;yl&gt; &lt;data&gt;</td>
+</tr>
+<tr>
+<td>pie</td>
+<td>&lt;title&gt; &lt;xl&gt; &lt;yl&gt; &lt;data&gt;</td>
+</tr>
+<tr>
+<td>linear</td>
+<td>&lt;title&gt; &lt;xl&gt; &lt;yl&gt; &lt;data&gt;</td>
+</tr>
+<tr>
+<td>area</td>
+<td>&lt;title&gt; &lt;xl&gt; &lt;yl&gt; &lt;data&gt;</td>
+</tr>
+<tr>
+<td>scatter</td>
+<td>&lt;title&gt; &lt;xl&gt; &lt;yl&gt; &lt;data&gt;</td>
+</tr>
+<tr>
+<td>hist</td>
+<td>&lt;title&gt; &lt;xl&gt; &lt;yl&gt; &lt;data&gt;</td>
+</tr>
+</tbody>
+</table>
 
 What does they refer to?
-ARG | Meaning
-----|--------
-title | Title of the graph
-xl | main label on the x axis
-yl| main label on the y axis
-data | the data for the graph
+<table>
+<thead>
+<tr>
+<th>ARG</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>Title of the graph</td>
+</tr>
+<tr>
+<td>xl</td>
+<td>main label on the x axis</td>
+</tr>
+<tr>
+<td>yl</td>
+<td>main label on the y axis</td>
+</tr>
+<tr>
+<td>data</td>
+<td>the data for the graph</td>
+</tr>
+</tbody>
+</table>
+
 
 
 ### How to write the data?
